@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A26D8831C3978C5004E4BF2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26D8821C3978C5004E4BF2 /* DataService.swift */; };
 		6A5EFDEB1C38BB7400F749DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EFDEA1C38BB7400F749DC /* AppDelegate.swift */; };
 		6A5EFDED1C38BB7400F749DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EFDEC1C38BB7400F749DC /* ViewController.swift */; };
 		6A5EFDF01C38BB7400F749DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5EFDEE1C38BB7400F749DC /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		6A5EFDF51C38BB7400F749DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5EFDF31C38BB7400F749DC /* LaunchScreen.storyboard */; };
 		6A5EFE001C38BB7400F749DC /* My_HoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EFDFF1C38BB7400F749DC /* My_HoodTests.swift */; };
 		6A5EFE0B1C38BB7400F749DC /* My_HoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EFE0A1C38BB7400F749DC /* My_HoodUITests.swift */; };
+		6A5EFE1A1C38BBFC00F749DC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EFE191C38BBFC00F749DC /* Post.swift */; };
+		6A5EFE1D1C38C55F00F749DC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EFE1C1C38C55F00F749DC /* PostCell.swift */; };
+		6A5EFE201C38D0D200F749DC /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EFE1F1C38D0D200F749DC /* AddPostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A26D8821C3978C5004E4BF2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6A5EFDE71C38BB7400F749DC /* My Hood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Hood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5EFDEA1C38BB7400F749DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5EFDEC1C38BB7400F749DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		6A5EFE061C38BB7400F749DC /* My HoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My HoodUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5EFE0A1C38BB7400F749DC /* My_HoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_HoodUITests.swift; sourceTree = "<group>"; };
 		6A5EFE0C1C38BB7400F749DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A5EFE191C38BBFC00F749DC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6A5EFE1C1C38C55F00F749DC /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		6A5EFE1F1C38D0D200F749DC /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A26D8811C3978B0004E4BF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6A26D8821C3978C5004E4BF2 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		6A5EFDDE1C38BB7400F749DC = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +113,12 @@
 		6A5EFDE91C38BB7400F749DC /* My Hood */ = {
 			isa = PBXGroup;
 			children = (
+				6A26D8811C3978B0004E4BF2 /* Services */,
+				6A5EFE181C38BBE900F749DC /* Model */,
+				6A5EFE1B1C38C53900F749DC /* View */,
+				6A5EFE1E1C38D09E00F749DC /* Controller */,
 				6A5EFDEA1C38BB7400F749DC /* AppDelegate.swift */,
-				6A5EFDEC1C38BB7400F749DC /* ViewController.swift */,
-				6A5EFDEE1C38BB7400F749DC /* Main.storyboard */,
 				6A5EFDF11C38BB7400F749DC /* Assets.xcassets */,
-				6A5EFDF31C38BB7400F749DC /* LaunchScreen.storyboard */,
 				6A5EFDF61C38BB7400F749DC /* Info.plist */,
 			);
 			path = "My Hood";
@@ -123,6 +140,33 @@
 				6A5EFE0C1C38BB7400F749DC /* Info.plist */,
 			);
 			path = "My HoodUITests";
+			sourceTree = "<group>";
+		};
+		6A5EFE181C38BBE900F749DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A5EFE191C38BBFC00F749DC /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6A5EFE1B1C38C53900F749DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A5EFE1C1C38C55F00F749DC /* PostCell.swift */,
+				6A5EFDEE1C38BB7400F749DC /* Main.storyboard */,
+				6A5EFDF31C38BB7400F749DC /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6A5EFE1E1C38D09E00F749DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A5EFDEC1C38BB7400F749DC /* ViewController.swift */,
+				6A5EFE1F1C38D0D200F749DC /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5EFE1A1C38BBFC00F749DC /* Post.swift in Sources */,
 				6A5EFDED1C38BB7400F749DC /* ViewController.swift in Sources */,
+				6A5EFE201C38D0D200F749DC /* AddPostVC.swift in Sources */,
+				6A26D8831C3978C5004E4BF2 /* DataService.swift in Sources */,
 				6A5EFDEB1C38BB7400F749DC /* AppDelegate.swift in Sources */,
+				6A5EFE1D1C38C55F00F749DC /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +535,7 @@
 				6A5EFE111C38BB7400F749DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A5EFE121C38BB7400F749DC /* Build configuration list for PBXNativeTarget "My HoodTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +544,7 @@
 				6A5EFE141C38BB7400F749DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A5EFE151C38BB7400F749DC /* Build configuration list for PBXNativeTarget "My HoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +553,7 @@
 				6A5EFE171C38BB7400F749DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
